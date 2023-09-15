@@ -14,15 +14,16 @@ namespace SampleHierarchies.Gui
     {
         static void Main(string[] args)
         {
-            Console.Write("Введіть колір: ");
+            //saving color settings to json file
+            Console.Write("Enter color: ");
             string color = Console.ReadLine();
 
             dynamic data = new { color = color };
             string json = JsonConvert.SerializeObject(data);
 
-            File.WriteAllText(@"D:\file.json", json);
+            File.WriteAllText(@"color.json", json);
 
-            Console.WriteLine("Дані успішно записано у файл!");
+            Console.WriteLine("Data has been successfully recorded!");
         }
         #region Properties And Ctor
 

@@ -7,6 +7,7 @@ namespace SampleHierarchies.Data;
 /// </summary>
 public class Settings : ISettings
 {
+    //fields for colors
 
     public string Version { get; set; }
 
@@ -15,7 +16,8 @@ public class Settings : ISettings
     public ConsoleColor MammalsScreen { get; set; }
     public ConsoleColor DogScreen { get; set; }
 
- 
+    //settings if program can`t find json for colors
+
     public Settings()
     {
         Version = "1.0";
@@ -24,6 +26,8 @@ public class Settings : ISettings
         MammalsScreen = ConsoleColor.Yellow;
         DogScreen = ConsoleColor.Green;
     }
+
+    //method display for settings
 
     public void Display()
     {

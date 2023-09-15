@@ -5,6 +5,7 @@
 /// </summary>
 public enum MammalsScreenChoices
 {
+    //added new animals
     Exit = 0,
     Dogs = 1,
     Elephant = 2,

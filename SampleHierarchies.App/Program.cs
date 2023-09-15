@@ -54,11 +54,13 @@ internal static class Program
                 services.AddSingleton<MainScreen, MainScreen>();
                 services.AddSingleton<SettingScreen, SettingScreen>();
                 services.AddSingleton<DogsScreen, DogsScreen>();
+                services.AddSingleton<AnimalsScreen, AnimalsScreen>();
+                services.AddSingleton<MammalsScreen, MammalsScreen>();
+                //added new animals screens
                 services.AddSingleton<AfricanelephantsScreen, AfricanelephantsScreen >();
                 services.AddSingleton<ChimpanzeesScreen, ChimpanzeesScreen>();
                 services.AddSingleton<PolarBearsScreen, PolarBearsScreen>();
-                services.AddSingleton<AnimalsScreen, AnimalsScreen>();
-                services.AddSingleton<MammalsScreen, MammalsScreen>();
+                
             });
     }
 

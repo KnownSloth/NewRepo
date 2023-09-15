@@ -4,6 +4,7 @@
 /// </summary>
 public enum MammalSpecies
 {
+    //added enums for description of a new animals
     [Description("Simple description of a none")]
     None = 0,
     [Description("Simple description of a dog")]
